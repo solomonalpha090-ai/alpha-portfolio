@@ -3,86 +3,106 @@
 <head>
 <title>Alpha Platform Creator</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
-body{
-margin:0;
-font-family:Arial;
-background:#0d0d0d;
-color:white;
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background: black;
+color: white;
 }
 
-/* HEADER */
+/* Header */
 
-header{
-background:linear-gradient(to right,#00c6ff,#0072ff);
-padding:40px 20px;
-text-align:center;
+header {
+background: linear-gradient(to right,#00c6ff,#0072ff);
+padding: 40px 20px;
+text-align: center;
 }
 
-header h1{
-margin:0;
-font-size:28px;
+header h1 {
+margin: 0;
+font-size: 28px;
 }
 
-header p{
-font-size:18px;
+header p {
+font-size: 18px;
 }
 
-/* NAVIGATION */
+/* Menu */
 
-nav{
-background:black;
-text-align:center;
-padding:10px;
+nav {
+background: #111;
+text-align: center;
+padding: 10px;
 }
 
-nav a{
-color:white;
-margin:10px;
-text-decoration:none;
-font-weight:bold;
+nav a {
+color: white;
+margin: 10px;
+text-decoration: none;
+font-weight: bold;
 }
 
-/* SECTIONS */
+/* Sections */
 
-section{
-padding:20px;
+section {
+padding: 20px;
 }
 
-/* SERVICES */
-
-.service-box{
-background:#1a1a1a;
-padding:15px;
-margin:10px 0;
-border-radius:10px;
+.card {
+background: #111;
+margin-bottom: 20px;
+border-radius: 10px;
+overflow: hidden;
 }
 
-.service-box img{
-width:100%;
-border-radius:10px;
+.card img {
+width: 100%;
+display: block;
 }
 
-/* BUTTON */
-
-.button{
-display:inline-block;
-background:#00e6e6;
-color:black;
-padding:12px 20px;
-margin-top:10px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
+.card h3 {
+padding: 10px;
+margin: 0;
 }
 
-footer{
-text-align:center;
-padding:20px;
-background:black;
+.card p {
+padding: 0 10px 15px;
+}
+
+/* Hire Section */
+
+.hire {
+background: #0072ff;
+text-align: center;
+padding: 30px;
+border-radius: 10px;
+margin: 20px;
+}
+
+/* Buttons */
+
+.button {
+display: inline-block;
+background: #25D366;
+color: white;
+padding: 12px 20px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+margin-top: 10px;
+}
+
+/* Footer */
+
+footer {
+background: #111;
+text-align: center;
+padding: 20px;
+margin-top: 20px;
 }
 
 </style>
@@ -95,16 +115,18 @@ background:black;
 
 <h1>ALPHA PLATFORM CREATOR</h1>
 
-<p>I Can Create Any Website, App or Platform You Need</p>
+<p>
+I Can Create Any Website, App or Platform You Need
+</p>
 
 </header>
 
 <nav>
 
 <a href="#">Home</a>
-<a href="#services">Services</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
+<a href="#">Services</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
 
 </nav>
 
@@ -114,29 +136,18 @@ background:black;
 
 <p>
 Hello! My name is Alpha.  
-I create modern digital platforms including:
+I build websites, mobile apps, business systems and online platforms.
 </p>
-
-<ul>
-
-<li>✅ Websites</li>
-<li>✅ Mobile Apps</li>
-<li>✅ Business Platforms</li>
-<li>✅ School Systems</li>
-<li>✅ Online Stores</li>
-<li>✅ Custom Projects</li>
-
-</ul>
 
 </section>
 
-<section id="services">
+<section>
 
-<h2>My Services</h2>
+<h2>Services</h2>
 
-<div class="service-box">
+<div class="card">
 
-<img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d">
+<img src="https://picsum.photos/400/250">
 
 <h3>Website Development</h3>
 
@@ -146,54 +157,72 @@ Business, school and portfolio websites.
 
 </div>
 
-<div class="service-box">
+<div class="card">
 
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+<img src="https://picsum.photos/401/250">
 
 <h3>Mobile App Creation</h3>
 
 <p>
-Android app development and platforms.
+Android apps and digital tools.
 </p>
 
 </div>
 
-<div class="service-box">
+<div class="card">
 
-<img src="https://images.unsplash.com/photo-1551434678-e076c223a692">
+<img src="https://picsum.photos/402/250">
 
-<h3>Online Platforms</h3>
+<h3>Custom Platforms</h3>
 
 <p>
-Custom systems and business tools.
+Online systems and business tools.
 </p>
 
 </div>
 
 </section>
 
-<section id="projects">
+<section>
 
 <h2>Projects</h2>
 
-<p>✔ Barbershop Website</p>
-
-<p>✔ Portfolio Website</p>
-
-<p>More Projects Coming Soon</p>
+<p>
+✔ Barbershop Website  
+✔ Portfolio Website  
+✔ More Projects Coming Soon
+</p>
 
 </section>
 
-<section id="contact">
+<section>
 
 <h2>Contact Me</h2>
 
-<p>📞 Phone: 0503173342</p>
+<p>
+📞 Phone: 0503173342
+</p>
 
-<a class="button"
-href="https://wa.me/233503173342">
+<a href="https://wa.me/233503173342" class="button">
 
-Contact Me on WhatsApp
+Chat Me on WhatsApp
+
+</a>
+
+</section>
+
+<section class="hire">
+
+<h2>Hire Me To Build Your Platform</h2>
+
+<p>
+Need a website, app or system?  
+I am ready to build your project professionally.
+</p>
+
+<a href="https://wa.me/233503173342" class="button">
+
+📱 Hire Me on WhatsApp
 
 </a>
 
@@ -201,7 +230,9 @@ Contact Me on WhatsApp
 
 <footer>
 
-<p>© 2026 Alpha Platform Creator</p>
+<p>
+© 2026 Alpha Platform Creator
+</p>
 
 </footer>
 
