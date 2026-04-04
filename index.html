@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Alpha Platform Creator</title>
 
-<title>Alpha Developer Services</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
@@ -15,16 +14,29 @@ background:#0d0d0d;
 color:white;
 }
 
+/* HEADER */
+
 header{
-background:#00bcd4;
-padding:20px;
+background:linear-gradient(to right,#00c6ff,#0072ff);
+padding:40px 20px;
 text-align:center;
 }
 
+header h1{
+margin:0;
+font-size:28px;
+}
+
+header p{
+font-size:18px;
+}
+
+/* NAVIGATION */
+
 nav{
 background:black;
-padding:10px;
 text-align:center;
+padding:10px;
 }
 
 nav a{
@@ -34,30 +46,43 @@ text-decoration:none;
 font-weight:bold;
 }
 
+/* SECTIONS */
+
 section{
 padding:20px;
 }
 
-.card{
+/* SERVICES */
+
+.service-box{
 background:#1a1a1a;
-padding:20px;
-margin:15px 0;
-border-radius:12px;
+padding:15px;
+margin:10px 0;
+border-radius:10px;
 }
 
-button{
-background:#00bcd4;
-border:none;
-padding:12px;
+.service-box img{
+width:100%;
+border-radius:10px;
+}
+
+/* BUTTON */
+
+.button{
+display:inline-block;
+background:#00e6e6;
+color:black;
+padding:12px 20px;
+margin-top:10px;
 border-radius:8px;
-font-size:16px;
-cursor:pointer;
+text-decoration:none;
+font-weight:bold;
 }
 
 footer{
-background:black;
 text-align:center;
-padding:15px;
+padding:20px;
+background:black;
 }
 
 </style>
@@ -70,122 +95,115 @@ padding:15px;
 
 <h1>ALPHA PLATFORM CREATOR</h1>
 
-<p>
-I Can Create Any Website, App or Platform You Need
-</p>
+<p>I Can Create Any Website, App or Platform You Need</p>
 
 </header>
 
 <nav>
 
 <a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Projects</a>
-<a href="#">Contact</a>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 
 </nav>
 
 <section>
 
-<div class="card">
-
 <h2>About Me</h2>
 
 <p>
-
-Hello!  
-My name is Alpha.
-
-I build:
-
-✔ Websites  
-✔ Mobile Apps  
-✔ Business Platforms  
-✔ School Systems  
-✔ Online Stores  
-✔ Custom Projects  
-
-If you need any digital platform, I can create it.
-
+Hello! My name is Alpha.  
+I create modern digital platforms including:
 </p>
-
-</div>
-
-<div class="card">
-
-<h2>Services</h2>
 
 <ul>
 
-<li>Website Development</li>
-
-<li>Mobile App Creation</li>
-
-<li>Business Websites</li>
-
-<li>School Websites</li>
-
-<li>Online Platforms</li>
-
-<li>Custom System Development</li>
+<li>✅ Websites</li>
+<li>✅ Mobile Apps</li>
+<li>✅ Business Platforms</li>
+<li>✅ School Systems</li>
+<li>✅ Online Stores</li>
+<li>✅ Custom Projects</li>
 
 </ul>
 
-</div>
+</section>
 
-<div class="card">
+<section id="services">
 
-<h2>Projects</h2>
+<h2>My Services</h2>
+
+<div class="service-box">
+
+<img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d">
+
+<h3>Website Development</h3>
 
 <p>
-
-✔ Barbershop Website  
-✔ Portfolio Website  
-✔ More Projects Coming Soon
-
+Business, school and portfolio websites.
 </p>
 
 </div>
 
-<div class="card">
+<div class="service-box">
 
-<h2>Contact Me</h2>
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+
+<h3>Mobile App Creation</h3>
 
 <p>
-
-📞 Phone: 0503173342
-
+Android app development and platforms.
 </p>
 
-<button onclick="contactMe()">
+</div>
 
-Contact Developer
+<div class="service-box">
 
-</button>
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692">
+
+<h3>Online Platforms</h3>
+
+<p>
+Custom systems and business tools.
+</p>
 
 </div>
 
 </section>
 
+<section id="projects">
+
+<h2>Projects</h2>
+
+<p>✔ Barbershop Website</p>
+
+<p>✔ Portfolio Website</p>
+
+<p>More Projects Coming Soon</p>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<p>📞 Phone: 0503173342</p>
+
+<a class="button"
+href="https://wa.me/233503173342">
+
+Contact Me on WhatsApp
+
+</a>
+
+</section>
+
 <footer>
 
-<p>
-
-© 2026 Alpha Platform Creator
-
-</p>
+<p>© 2026 Alpha Platform Creator</p>
 
 </footer>
-
-<script>
-
-function contactMe(){
-
-alert("Call Alpha: 0503173342");
-
-}
-
-</script>
 
 </body>
 
