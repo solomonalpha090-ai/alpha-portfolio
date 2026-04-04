@@ -1,92 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-<meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Professional Website & App Developer</title>
+<title>App & Website Creator</title>
 
 <style>
 
-body {
+body{
 font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-scroll-behavior: smooth;
-background: #f4f4f4;
+margin:0;
+padding:0;
+background:#f2f2f2;
+text-align:center;
 }
 
-header {
-background: linear-gradient(135deg,#000,#333);
-color: white;
-text-align: center;
-padding: 50px 20px;
+header{
+background:#222;
+color:white;
+padding:25px;
 }
 
-header h1 {
-font-size: 28px;
-margin-bottom: 10px;
+.container{
+padding:20px;
 }
 
-nav {
-background: #111;
-text-align: center;
-padding: 10px;
+.card{
+background:white;
+margin:15px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
-nav a {
-color: white;
-margin: 10px;
-text-decoration: none;
-font-weight: bold;
+.btn{
+display:inline-block;
+background:#28a745;
+color:white;
+padding:12px 20px;
+border-radius:6px;
+text-decoration:none;
+margin-top:12px;
+font-weight:bold;
 }
 
-section {
-padding: 30px 20px;
+.btn:hover{
+background:#1e7e34;
 }
 
-.card {
-background: white;
-padding: 20px;
-margin: 15px 0;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.footer{
+background:#222;
+color:white;
+padding:15px;
+margin-top:30px;
 }
 
-h2 {
-text-align: center;
-color: #333;
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
 }
 
-.btn {
-display: block;
-background: #2ecc71;
-color: white;
-padding: 15px;
-margin-top: 15px;
-text-align: center;
-text-decoration: none;
-border-radius: 8px;
-font-weight: bold;
-}
-
-.btn:hover {
-background: #27ae60;
-}
-
-.price {
-font-size: 18px;
-font-weight: bold;
-color: #27ae60;
-}
-
-footer {
-background: #111;
-color: white;
-text-align: center;
-padding: 20px;
-margin-top: 40px;
+ul{
+text-align:left;
+display:inline-block;
 }
 
 </style>
@@ -97,24 +83,15 @@ margin-top: 40px;
 
 <header>
 
-<h1>I Create Websites & Apps</h1>
+<h1>Mobile App & Website Creator</h1>
 
-<p>Professional Website & App Developer</p>
+<p>
+I create websites and Android apps for businesses, schools and individuals.
+</p>
 
 </header>
 
-<nav>
-
-<a href="#services">Services</a>
-<a href="#projects">Projects</a>
-<a href="#prices">Prices</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
-<!-- SERVICES -->
-
-<section id="services">
+<div class="container">
 
 <h2>My Services</h2>
 
@@ -123,8 +100,7 @@ margin-top: 40px;
 <h3>Website Creation</h3>
 
 <p>
-I create modern websites for businesses,
-schools, shops and companies.
+I build modern websites for businesses and schools.
 </p>
 
 </div>
@@ -134,17 +110,14 @@ schools, shops and companies.
 <h3>Mobile App Creation</h3>
 
 <p>
-I create simple Android apps for businesses
-and personal use.
+I create simple Android apps for different businesses.
 </p>
 
 </div>
 
-</section>
+</div>
 
-<!-- PROJECTS -->
-
-<section id="projects">
+<div class="container">
 
 <h2>My Projects</h2>
 
@@ -152,7 +125,9 @@ and personal use.
 
 <h3>Barbershop Website</h3>
 
-<p>Example website for barber businesses.</p>
+<p>
+Professional website for barber businesses.
+</p>
 
 <a href="#barber" class="btn">
 View Barbershop Demo
@@ -164,7 +139,9 @@ View Barbershop Demo
 
 <h3>School Website</h3>
 
-<p>Example website for schools.</p>
+<p>
+Modern website for schools and education.
+</p>
 
 <a href="#school" class="btn">
 View School Demo
@@ -172,11 +149,11 @@ View School Demo
 
 </div>
 
-</section>
+</div>
 
 <!-- BARBER DEMO -->
 
-<section id="barber">
+<div id="barber" class="container">
 
 <h2>Barbershop Demo</h2>
 
@@ -194,17 +171,19 @@ View School Demo
 
 </ul>
 
+<br>
+
 <a href="tel:0503173342" class="btn">
 Call Barber
 </a>
 
 </div>
 
-</section>
+</div>
 
 <!-- SCHOOL DEMO -->
 
-<section id="school">
+<div id="school" class="container">
 
 <h2>School Demo</h2>
 
@@ -223,61 +202,52 @@ Call Barber
 
 </ul>
 
-</div>
-
-</section>
-
-<!-- PRICES -->
-
-<section id="prices">
-
-<h2>Price List</h2>
-
-<div class="card">
-
-<p class="price">
-Basic Website — GHS 50+
-</p>
-
-<p class="price">
-Business Website — GHS 100+
-</p>
-
-<p class="price">
-Mobile App — GHS 150+
-</p>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-<h2>Contact Me</h2>
-
-<div class="card">
-
-<p>
-Phone / WhatsApp:
-</p>
+<br>
 
 <a href="tel:0503173342" class="btn">
-Call Me Now
+Call School
 </a>
 
 </div>
 
-</section>
+</div>
 
-<footer>
+<!-- ABOUT SECTION -->
+
+<div class="container">
+
+<h2>About Me</h2>
+
+<div class="card">
 
 <p>
-© 2026 Professional Website Developer
+I am a developer who creates websites and mobile apps for businesses, schools and individuals.
+I help businesses grow using modern technology.
 </p>
 
-</footer>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<p>
+Contact me: 0503173342
+</p>
+
+<p>
+Available on WhatsApp and phone calls.
+</p>
+
+</div>
+
+<!-- WHATSAPP BUTTON -->
+
+<a href="https://wa.me/233503173342" class="whatsapp">
+W
+</a>
 
 </body>
 
