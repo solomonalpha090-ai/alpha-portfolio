@@ -1,181 +1,177 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ALPHA Web Developer</title>
+<title>ALPHA | Powerful Website Developer</title>
 
 <style>
 
 body{
 font-family: Arial, sans-serif;
 margin:0;
-padding:0;
-background:#f2f2f2;
+background:#f4f6f9;
+}
+
+/* POWERFUL HEADER */
+
+header{
+background:linear-gradient(135deg,#000,#00c853);
+color:white;
+text-align:center;
+padding:40px 15px;
+}
+
+header h1{
+font-size:40px;
+margin:0;
+letter-spacing:3px;
+color:#00ff88;
+}
+
+header p{
+font-size:18px;
+margin-top:10px;
+}
+
+/* IMAGE BANNER */
+
+.hero-img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+/* SECTION */
+
+section{
+padding:20px;
 text-align:center;
 }
 
-header{
-background:#111;
-color:white;
-padding:30px;
-}
-
-.logo{
-font-size:32px;
-font-weight:bold;
-color:#28a745;
-letter-spacing:2px;
-}
-
-.tagline{
-font-size:16px;
-margin-top:10px;
-color:#ddd;
-}
-
-.container{
-padding:20px;
-}
+/* CARDS */
 
 .card{
 background:white;
-margin:15px;
 padding:20px;
+margin:15px auto;
 border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+max-width:400px;
 }
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+.card h3{
+margin-top:10px;
+}
+
+/* BUTTON */
 
 .btn{
 display:inline-block;
-background:#28a745;
+margin-top:10px;
+padding:12px 20px;
+background:#00c853;
 color:white;
-padding:14px 22px;
-border-radius:6px;
 text-decoration:none;
-margin-top:12px;
+border-radius:6px;
 font-weight:bold;
-font-size:16px;
 }
 
 .btn:hover{
-background:#1e7e34;
+background:#009624;
 }
 
-.footer{
-background:#111;
-color:white;
+/* CONTACT */
+
+.contact{
+background:white;
 padding:20px;
-margin-top:30px;
-font-weight:bold;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+margin-top:20px;
 }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
+/* FOOTER */
+
+footer{
+background:black;
 color:white;
-padding:16px;
-border-radius:50%;
-text-decoration:none;
-font-size:18px;
-font-weight:bold;
-box-shadow:0 0 10px rgba(0,0,0,0.3);
-}
-
-ul{
-text-align:left;
-display:inline-block;
-}
-
-.price{
-color:#28a745;
-font-weight:bold;
-font-size:18px;
+text-align:center;
+padding:15px;
+margin-top:30px;
+font-size:14px;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
 
-<div class="logo">
-ALPHA
-</div>
+<h1>ALPHA</h1>
 
-<div class="tagline">
-Powerful Websites & Mobile Apps for Businesses
-</div>
+<p>Powerful Websites & Mobile Apps for Businesses</p>
 
 </header>
 
-<div class="container">
+<!-- HERO IMAGE -->
+
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+class="hero-img">
+
+<!-- SERVICES -->
+
+<section>
 
 <h2>My Services</h2>
 
 <div class="card">
 
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
 <h3>Website Creation</h3>
 
-<p>
-Modern websites for businesses, shops and schools.
-</p>
+<p>Modern websites for businesses, shops and schools.</p>
 
 </div>
 
 <div class="card">
+
+<img src="https://images.unsplash.com/photo-1551650975-87deedd944c3">
 
 <h3>Mobile App Creation</h3>
 
-<p>
-Simple Android apps for different businesses.
-</p>
+<p>Simple Android apps for different businesses.</p>
 
 </div>
 
-</div>
+</section>
 
-<div class="container">
+<!-- PROJECTS -->
 
-<h2>Pricing</h2>
-
-<div class="card">
-
-<p class="price">
-Basic Website — GHS 50+
-</p>
-
-<p class="price">
-Business Website — GHS 100+
-</p>
-
-<p class="price">
-Mobile App — GHS 150+
-</p>
-
-</div>
-
-</div>
-
-<div class="container">
+<section>
 
 <h2>My Projects</h2>
 
 <div class="card">
 
+<img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a">
+
 <h3>Barbershop Website</h3>
 
-<p>
-Professional website for barber businesses.
-</p>
+<p>Professional website for barber businesses.</p>
 
-<a href="#barber" class="btn">
+<a href="barber.html" class="btn">
 View Barbershop Demo
 </a>
 
@@ -183,95 +179,36 @@ View Barbershop Demo
 
 <div class="card">
 
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
+
 <h3>School Website</h3>
 
-<p>
-Modern website for schools.
-</p>
+<p>Modern website for schools.</p>
 
-<a href="#school" class="btn">
+<a href="school.html" class="btn">
 View School Demo
 </a>
 
 </div>
 
-</div>
-
-<!-- BARBER DEMO -->
-
-<div id="barber" class="container">
-
-<h2>Barbershop Demo</h2>
-
-<div class="card">
-
-<h3>Smart Barber Shop</h3>
-
-<p>Book your haircut easily.</p>
-
-<ul>
-
-<li>Hair Cut</li>
-<li>Beard Trim</li>
-<li>Hair Coloring</li>
-
-</ul>
-
-<br>
-
-<a href="tel:0503173342" class="btn">
-Call Barber
-</a>
-
-</div>
-
-</div>
-
-<!-- SCHOOL DEMO -->
-
-<div id="school" class="container">
-
-<h2>School Demo</h2>
-
-<div class="card">
-
-<h3>Bright Future School</h3>
-
-<p>Welcome to Bright Future School.</p>
-
-<ul>
-
-<li>Mathematics</li>
-<li>English</li>
-<li>Science</li>
-<li>ICT</li>
-
-</ul>
-
-<br>
-
-<a href="tel:0503173342" class="btn">
-Call School
-</a>
-
-</div>
-
-</div>
+</section>
 
 <!-- CONTACT -->
 
-<div class="container">
+<section>
+
+<div class="contact">
 
 <h2>Contact ALPHA</h2>
 
-<div class="card">
+<p>
+Phone / WhatsApp:<br>
+<b>0503173342</b>
+</p>
 
 <p>
-
-Phone / WhatsApp: 0503173342  
-<br>
-Location: Navrongo, Ghana
-
+Location:<br>
+Navrongo, Ghana
 </p>
 
 <a href="tel:0503173342" class="btn">
@@ -280,23 +217,13 @@ Call Me Now
 
 </div>
 
-</div>
+</section>
 
-<!-- FOOTER -->
+<footer>
 
-<div class="footer">
+© 2026 ALPHA — Professional Website Developer Navrongo Ghana
 
-© 2026 ALPHA — Professional Website Developer  
-Navrongo, Ghana
-
-</div>
-
-<!-- WHATSAPP BUTTON -->
-
-<a href="https://wa.me/233503173342" class="whatsapp">
-W
-</a>
+</footer>
 
 </body>
-
 </html>
