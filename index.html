@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,12 +10,12 @@
 <style>
 
 body{
-font-family: Arial, sans-serif;
+font-family:Arial;
 margin:0;
 background:#f4f6f9;
 }
 
-/* POWERFUL HEADER */
+/* HEADER */
 
 header{
 background:linear-gradient(135deg,#000,#00c853);
@@ -32,12 +33,11 @@ color:#00ff88;
 
 header p{
 font-size:18px;
-margin-top:10px;
 }
 
-/* IMAGE BANNER */
+/* HERO IMAGE */
 
-.hero-img{
+.hero{
 width:100%;
 height:200px;
 object-fit:cover;
@@ -50,7 +50,7 @@ padding:20px;
 text-align:center;
 }
 
-/* CARDS */
+/* CARD */
 
 .card{
 background:white;
@@ -66,11 +66,6 @@ width:100%;
 height:180px;
 object-fit:cover;
 border-radius:8px;
-margin-bottom:10px;
-}
-
-.card h3{
-margin-top:10px;
 }
 
 /* BUTTON */
@@ -86,18 +81,10 @@ border-radius:6px;
 font-weight:bold;
 }
 
-.btn:hover{
-background:#009624;
-}
+/* HIDE SECTIONS */
 
-/* CONTACT */
-
-.contact{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-margin-top:20px;
+.hidden{
+display:none;
 }
 
 /* FOOTER */
@@ -108,13 +95,17 @@ color:white;
 text-align:center;
 padding:15px;
 margin-top:30px;
-font-size:14px;
 }
 
 </style>
+
 </head>
 
 <body>
+
+<!-- HOME SECTION -->
+
+<div id="home">
 
 <header>
 
@@ -124,12 +115,8 @@ font-size:14px;
 
 </header>
 
-<!-- HERO IMAGE -->
-
 <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-class="hero-img">
-
-<!-- SERVICES -->
+class="hero">
 
 <section>
 
@@ -157,8 +144,6 @@ class="hero-img">
 
 </section>
 
-<!-- PROJECTS -->
-
 <section>
 
 <h2>My Projects</h2>
@@ -171,9 +156,10 @@ class="hero-img">
 
 <p>Professional website for barber businesses.</p>
 
-<a href="barber.html" class="btn">
+<button class="btn"
+onclick="showBarber()">
 View Barbershop Demo
-</a>
+</button>
 
 </div>
 
@@ -185,19 +171,18 @@ View Barbershop Demo
 
 <p>Modern website for schools.</p>
 
-<a href="school.html" class="btn">
+<button class="btn"
+onclick="showSchool()">
 View School Demo
-</a>
+</button>
 
 </div>
 
 </section>
 
-<!-- CONTACT -->
-
 <section>
 
-<div class="contact">
+<div class="card">
 
 <h2>Contact ALPHA</h2>
 
@@ -211,7 +196,8 @@ Location:<br>
 Navrongo, Ghana
 </p>
 
-<a href="tel:0503173342" class="btn">
+<a href="tel:0503173342"
+class="btn">
 Call Me Now
 </a>
 
@@ -224,6 +210,103 @@ Call Me Now
 © 2026 ALPHA — Professional Website Developer Navrongo Ghana
 
 </footer>
+
+</div>
+
+<!-- BARBERSHOP DEMO -->
+
+<div id="barber" class="hidden">
+
+<img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1"
+class="hero">
+
+<section>
+
+<h1>Modern Barbershop</h1>
+
+<p>
+Haircuts • Shaving • Styling
+</p>
+
+<a href="tel:0503173342"
+class="btn">
+Book Appointment
+</a>
+
+<br><br>
+
+<button class="btn"
+onclick="goHome()">
+⬅ Back
+</button>
+
+</section>
+
+</div>
+
+<!-- SCHOOL DEMO -->
+
+<div id="school" class="hidden">
+
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350"
+class="hero">
+
+<section>
+
+<h1>Bright Future School</h1>
+
+<ul style="list-style:none">
+
+<li>Mathematics</li>
+<li>English</li>
+<li>Science</li>
+<li>ICT</li>
+
+</ul>
+
+<a href="tel:0503173342"
+class="btn">
+Call School
+</a>
+
+<br><br>
+
+<button class="btn"
+onclick="goHome()">
+⬅ Back
+</button>
+
+</section>
+
+</div>
+
+<!-- SCRIPT -->
+
+<script>
+
+function showBarber(){
+
+document.getElementById("home").style.display="none";
+document.getElementById("barber").style.display="block";
+
+}
+
+function showSchool(){
+
+document.getElementById("home").style.display="none";
+document.getElementById("school").style.display="block";
+
+}
+
+function goHome(){
+
+document.getElementById("barber").style.display="none";
+document.getElementById("school").style.display="none";
+document.getElementById("home").style.display="block";
+
+}
+
+</script>
 
 </body>
 </html>
