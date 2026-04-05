@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ALPHA Barbershop | Developer Portfolio</title>
+<title>ALPHA | Developer Portfolio</title>
 
 <style>
 
-body {
+body{
 margin:0;
 font-family:Arial, sans-serif;
 background:#0f172a;
@@ -38,11 +40,11 @@ padding:60px 20px;
 }
 
 .hero img{
-width:120px;
-height:120px;
+width:130px;
+height:130px;
 border-radius:50%;
-margin-bottom:15px;
 border:3px solid #38bdf8;
+margin-bottom:15px;
 }
 
 .hero h1{
@@ -64,7 +66,7 @@ text-decoration:none;
 font-weight:bold;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 .section{
 padding:40px 20px;
@@ -78,6 +80,24 @@ padding:20px;
 border-radius:10px;
 }
 
+/* PROJECTS */
+
+.project{
+background:#020617;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+
+.project button{
+padding:10px 20px;
+background:#38bdf8;
+border:none;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+}
+
 /* FOOTER */
 
 footer{
@@ -87,7 +107,28 @@ background:#020617;
 margin-top:30px;
 }
 
+/* HIDDEN PROJECT SECTIONS */
+
+.hidden{
+display:none;
+}
+
 </style>
+
+<script>
+
+function showProject(id){
+
+document.getElementById("barber").style.display="none";
+document.getElementById("student").style.display="none";
+
+document.getElementById(id).style.display="block";
+
+window.scrollTo(0,document.body.scrollHeight);
+
+}
+
+</script>
 
 </head>
 
@@ -98,7 +139,7 @@ margin-top:30px;
 <nav>
 
 <div class="logo">
-✂️ ALPHA BARBERSHOP
+👨‍💻 ALPHA PORTFOLIO
 </div>
 
 </nav>
@@ -107,76 +148,138 @@ margin-top:30px;
 
 <section class="hero">
 
-<img src="alpha.png">
-
 <h1>
-Welcome to <span>ALPHA BARBERSHOP</span>
+Hi, I'm <span>ALPHA</span>
 </h1>
 
 <p>
-Professional Haircuts | Clean Shaves | Modern Styles  
-Navrongo, Ghana
+Web Developer | App Builder  
+From Navrongo, Ghana
 </p>
 
 <a href="tel:0503173342" class="btn">
-📞 Call Now
+📞 Hire Me
 </a>
 
 </section>
 
-<!-- BARBER SERVICES -->
+<!-- ABOUT -->
 
 <section class="section">
 
-<h2>✂️ Our Services</h2>
+<h2>👨‍💻 About Me</h2>
 
 <div class="card">
-<h3>💈 Hair Cutting</h3>
-<p>Modern haircut styles for men and boys.</p>
-</div>
 
-<div class="card">
-<h3>🧔 Beard Shaving</h3>
-<p>Clean beard trimming and shaving.</p>
-</div>
-
-<div class="card">
-<h3>🔥 Hair Styling</h3>
-<p>Trending and modern hairstyles.</p>
-</div>
-
-</section>
-
-<!-- PRICE LIST -->
-
-<section class="section">
-
-<h2>💰 Price List</h2>
-
-<div class="card">
-<p>Haircut — GH₵ 20</p>
-<p>Beard Shave — GH₵ 15</p>
-<p>Hair Styling — GH₵ 25</p>
-</div>
-
-</section>
-
-<!-- DEVELOPER SECTION -->
-
-<section class="section">
-
-<h2>👨‍💻 Built By ALPHA</h2>
-
-<div class="card">
 <p>
-I am a Website Developer and App Builder from Navrongo.  
-I build websites for businesses and individuals.
+I am ALPHA, a developer from Navrongo.  
+I build modern websites and mobile apps  
+for businesses and individuals.
 </p>
+
 </div>
 
-<a href="student-app.html" class="btn">
-📱 View My Student App
-</a>
+</section>
+
+<!-- SERVICES -->
+
+<section class="section">
+
+<h2>🛠️ My Services</h2>
+
+<div class="card">
+🌐 Website Development
+</div>
+
+<div class="card">
+📱 App Development
+</div>
+
+<div class="card">
+🎨 UI Design
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section class="section">
+
+<h2>📂 My Projects</h2>
+
+<div class="project">
+
+<h3>✂️ Barber Website</h3>
+
+<p>
+Modern barbershop website project.
+</p>
+
+<button onclick="showProject('barber')">
+View Barber Website
+</button>
+
+</div>
+
+<div class="project">
+
+<h3>📱 Student App</h3>
+
+<p>
+Student mobile application project.
+</p>
+
+<button onclick="showProject('student')">
+View Student App
+</button>
+
+</div>
+
+</section>
+
+<!-- BARBER WEBSITE -->
+
+<section id="barber" class="hidden">
+
+<h2>✂️ ALPHA Barbershop</h2>
+
+<div class="card">
+💈 Hair Cutting
+</div>
+
+<div class="card">
+🧔 Beard Shaving
+</div>
+
+<div class="card">
+🔥 Hair Styling
+</div>
+
+<p>
+
+📞 Call: 0503173342
+
+</p>
+
+</section>
+
+<!-- STUDENT APP -->
+
+<section id="student" class="hidden">
+
+<h2>📱 Student App</h2>
+
+<div class="card">
+📚 Study Planner
+</div>
+
+<div class="card">
+📝 Notes Manager
+</div>
+
+<div class="card">
+📅 Schedule Tracker
+</div>
 
 </section>
 
@@ -184,17 +287,17 @@ I build websites for businesses and individuals.
 
 <section class="section">
 
-<h2>📞 Contact Me</h2>
+<h2>📞 Contact</h2>
 
 <div class="card">
 
-<p>
 📍 Navrongo, Ghana  
-</p>
 
-<p>
+<br><br>
+
 📞 0503173342  
-</p>
+
+<br><br>
 
 <a href="tel:0503173342" class="btn">
 Call Now
@@ -204,16 +307,15 @@ Call Now
 
 </section>
 
-<!-- FOOTER -->
-
 <footer>
 
 <p>
-© 2026 ALPHA BARBERSHOP  
+© 2026 ALPHA Portfolio  
 Built by ALPHA
 </p>
 
 </footer>
 
 </body>
+
 </html>
