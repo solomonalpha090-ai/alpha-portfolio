@@ -1,312 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ALPHA | Powerful Website Developer</title>
+<title>ALPHA Developer</title>
 
 <style>
 
-body{
-font-family:Arial;
-margin:0;
-background:#f4f6f9;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
 }
 
-/* HEADER */
+/* ALPHA Logo */
 
-header{
-background:linear-gradient(135deg,#000,#00c853);
-color:white;
-text-align:center;
-padding:40px 15px;
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+
+    color: cyan;
+    text-shadow:
+        0 0 10px cyan,
+        0 0 20px cyan,
+        0 0 40px cyan;
 }
 
-header h1{
-font-size:40px;
-margin:0;
-letter-spacing:3px;
-color:#00ff88;
+/* Hero Section */
+
+.hero {
+    text-align: center;
+    padding: 40px;
 }
 
-header p{
-font-size:18px;
+.hero h1 {
+    font-size: 28px;
+    color: white;
 }
 
-/* HERO IMAGE */
-
-.hero{
-width:100%;
-height:200px;
-object-fit:cover;
+.hero p {
+    font-size: 16px;
+    color: lightgray;
 }
 
-/* SECTION */
+/* Buttons */
 
-section{
-padding:20px;
-text-align:center;
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+
+    background: cyan;
+    color: black;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: bold;
 }
 
-/* CARD */
-
-.card{
-background:white;
-padding:20px;
-margin:15px auto;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-max-width:400px;
+.btn:hover {
+    background: white;
 }
 
-.card img{
-width:100%;
-height:180px;
-object-fit:cover;
-border-radius:8px;
+/* Section Style */
+
+.section {
+    padding: 30px;
+    text-align: center;
 }
 
-/* BUTTON */
+/* Project Boxes */
 
-.btn{
-display:inline-block;
-margin-top:10px;
-padding:12px 20px;
-background:#00c853;
-color:white;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
+.project-box {
+    background: #111;
+    margin: 15px;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px cyan;
 }
 
-/* HIDE SECTIONS */
+/* Footer */
 
-.hidden{
-display:none;
-}
-
-/* FOOTER */
-
-footer{
-background:black;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:30px;
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: gray;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<!-- HOME SECTION -->
+<!-- ALPHA Logo -->
 
-<div id="home">
+<div class="logo">
+ALPHA
+</div>
 
-<header>
+<!-- Hero Section -->
 
-<h1>ALPHA</h1>
+<div class="hero">
 
-<p>Powerful Websites & Mobile Apps for Businesses</p>
+<h1>Hello, I'm ALPHA 💻</h1>
 
-</header>
+<p>
+Young Developer from Navrongo  
+Building Websites, Apps and Digital Solutions.
+</p>
 
-<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-class="hero">
+<a href="#projects" class="btn">
+View Projects
+</a>
 
-<section>
-
-<h2>My Services</h2>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
-
-<h3>Website Creation</h3>
-
-<p>Modern websites for businesses, shops and schools.</p>
+<a href="tel:0503173342" class="btn">
+Call Me
+</a>
 
 </div>
 
-<div class="card">
+<!-- Projects Section -->
 
-<img src="https://images.unsplash.com/photo-1551650975-87deedd944c3">
-
-<h3>Mobile App Creation</h3>
-
-<p>Simple Android apps for different businesses.</p>
-
-</div>
-
-</section>
-
-<section>
+<div id="projects" class="section">
 
 <h2>My Projects</h2>
 
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a">
-
-<h3>Barbershop Website</h3>
-
-<p>Professional website for barber businesses.</p>
-
-<button class="btn"
-onclick="showBarber()">
-View Barbershop Demo
-</button>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
+<div class="project-box">
 
 <h3>School Website</h3>
 
-<p>Modern website for schools.</p>
-
-<button class="btn"
-onclick="showSchool()">
-View School Demo
-</button>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="card">
-
-<h2>Contact ALPHA</h2>
-
 <p>
-Phone / WhatsApp:<br>
-<b>0503173342</b>
+A modern school website design for students and teachers.
 </p>
 
-<p>
-Location:<br>
-Navrongo, Ghana
-</p>
-
-<a href="tel:0503173342"
-class="btn">
-Call Me Now
+<a href="#" class="btn">
+View Demo
 </a>
 
 </div>
 
-</section>
+<div class="project-box">
 
-<footer>
-
-© 2026 ALPHA — Professional Website Developer Navrongo Ghana
-
-</footer>
-
-</div>
-
-<!-- BARBERSHOP DEMO -->
-
-<div id="barber" class="hidden">
-
-<img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1"
-class="hero">
-
-<section>
-
-<h1>Modern Barbershop</h1>
+<h3>Barber Website</h3>
 
 <p>
-Haircuts • Shaving • Styling
+A stylish barber booking and showcase website.
 </p>
 
-<a href="tel:0503173342"
-class="btn">
-Book Appointment
+<a href="#" class="btn">
+View Demo
 </a>
-
-<br><br>
-
-<button class="btn"
-onclick="goHome()">
-⬅ Back
-</button>
-
-</section>
 
 </div>
 
-<!-- SCHOOL DEMO -->
+</div>
 
-<div id="school" class="hidden">
+<!-- About Section -->
 
-<img src="https://images.unsplash.com/photo-1588072432836-e10032774350"
-class="hero">
+<div class="section">
 
-<section>
+<h2>About ALPHA</h2>
 
-<h1>Bright Future School</h1>
-
-<ul style="list-style:none">
-
-<li>Mathematics</li>
-<li>English</li>
-<li>Science</li>
-<li>ICT</li>
-
-</ul>
-
-<a href="tel:0503173342"
-class="btn">
-Call School
-</a>
-
-<br><br>
-
-<button class="btn"
-onclick="goHome()">
-⬅ Back
-</button>
-
-</section>
+<p>
+I am a young developer learning coding and building real projects.
+My goal is to become a powerful software developer and create solutions that help people.
+</p>
 
 </div>
 
-<!-- SCRIPT -->
+<!-- Footer -->
 
-<script>
+<div class="footer">
 
-function showBarber(){
+© 2026 ALPHA Developer | Navrongo
 
-document.getElementById("home").style.display="none";
-document.getElementById("barber").style.display="block";
-
-}
-
-function showSchool(){
-
-document.getElementById("home").style.display="none";
-document.getElementById("school").style.display="block";
-
-}
-
-function goHome(){
-
-document.getElementById("barber").style.display="none";
-document.getElementById("school").style.display="none";
-document.getElementById("home").style.display="block";
-
-}
-
-</script>
+</div>
 
 </body>
 </html>
