@@ -1,307 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha Portfolio</title>
 
-<title>ALPHA | Web & App Developer</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
 margin:0;
-font-family:Arial, sans-serif;
-background:#0f172a;
+font-family:Arial;
+background:#111;
 color:white;
-}
-
-/* NAVBAR */
-
-nav{
-display:flex;
-justify-content:space-between;
-padding:15px;
-background:#020617;
-}
-
-.logo{
-font-size:20px;
-font-weight:bold;
-color:#38bdf8;
-}
-
-/* HERO */
-
-.hero{
 text-align:center;
-padding:60px 20px;
 }
 
-.hero h1{
-font-size:38px;
+header{
+background:black;
+padding:25px;
 }
 
-.hero span{
-color:#38bdf8;
-}
-
-.hero p{
-color:#cbd5f5;
-font-size:18px;
-}
-
-.btn{
-display:inline-block;
+.profile{
+width:150px;
+height:150px;
+border-radius:50%;
 margin-top:15px;
-padding:12px 25px;
-background:#38bdf8;
-color:black;
-border-radius:6px;
-text-decoration:none;
-font-weight:bold;
+border:3px solid gold;
+object-fit:cover;
 }
 
-/* SECTION */
-
-.section{
-padding:40px 20px;
-text-align:center;
+h1{
+color:gold;
 }
 
-.card{
-background:#020617;
-margin:15px;
-padding:20px;
-border-radius:10px;
+section{
+padding:25px;
 }
-
-/* PROJECT */
 
 .project{
-background:#020617;
-margin:20px;
+background:#222;
+margin:15px;
 padding:20px;
-border-radius:10px;
+border-radius:12px;
 }
 
-/* FOOTER */
+.button{
+display:inline-block;
+margin-top:12px;
+padding:12px 20px;
+background:gold;
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
 
 footer{
-text-align:center;
+background:black;
 padding:20px;
-background:#020617;
 margin-top:30px;
 }
 
-.hidden{
-display:none;
-}
-
 </style>
-
-<script>
-
-function showProject(id){
-
-document.getElementById("barber").style.display="none";
-document.getElementById("student").style.display="none";
-
-document.getElementById(id).style.display="block";
-
-window.scrollTo(0,document.body.scrollHeight);
-
-}
-
-</script>
 
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<header>
 
-<nav>
-
-<div class="logo">
-👨‍💻 ALPHA PORTFOLIO
-</div>
-
-</nav>
-
-<!-- HERO -->
-
-<section class="hero">
-
-<h1>
-Hi, I'm <span>ALPHA</span>
-</h1>
+<h1>ALPHA</h1>
 
 <p>
-Web Developer • App Builder  
-From Navrongo, Ghana
+Web Developer | App Builder
 </p>
 
-<a href="tel:0503173342" class="btn">
-📞 Hire Me
-</a>
+<img src="./alpha.png"
+class="profile">
 
-</section>
+</header>
 
-<!-- ABOUT -->
+<section>
 
-<section class="section">
-
-<h2>👨‍💻 About Me</h2>
-
-<div class="card">
+<h2>About Me</h2>
 
 <p>
-My name is ALPHA from Navrongo.  
-I build modern websites and mobile apps  
-for businesses, schools, and individuals.
+My name is Alpha from Ghana.
+
+I build websites and simple apps
+for businesses and students.
 </p>
 
-</div>
-
 </section>
 
-<!-- SERVICES -->
+<section>
 
-<section class="section">
-
-<h2>🛠️ My Services</h2>
-
-<div class="card">
-🌐 Website Development
-</div>
-
-<div class="card">
-📱 App Development
-</div>
-
-<div class="card">
-🎨 UI Design
-</div>
-
-</section>
-
-<!-- PROJECTS -->
-
-<section class="section">
-
-<h2>📂 My Projects</h2>
+<h2>My Projects</h2>
 
 <div class="project">
 
-<h3>✂️ Barber Website</h3>
+<h3>💈 Barbershop Website</h3>
 
 <p>
-Modern barbershop website for business.
+A professional barbershop website.
 </p>
 
-<button onclick="showProject('barber')" class="btn">
-View Project
-</button>
+<a class="button"
+href="./barber.html">
+
+Open Project
+
+</a>
 
 </div>
 
 <div class="project">
 
-<h3>📱 Student App</h3>
+<h3>🎓 Student App</h3>
 
 <p>
-Student planning and school app.
+A simple student app.
 </p>
 
-<button onclick="showProject('student')" class="btn">
-View Project
-</button>
+<a class="button"
+href="./student-app.html">
 
-</div>
+Open Project
 
-</section>
-
-<!-- BARBER PROJECT -->
-
-<section id="barber" class="hidden">
-
-<h2>✂️ Barber Website Project</h2>
-
-<div class="card">
-💈 Hair Cutting
-</div>
-
-<div class="card">
-🧔 Beard Shaving
-</div>
-
-<div class="card">
-🔥 Hair Styling
-</div>
-
-<p>
-
-📞 Business Contact: 0503173342
-
-</p>
-
-</section>
-
-<!-- STUDENT PROJECT -->
-
-<section id="student" class="hidden">
-
-<h2>📱 Student App Project</h2>
-
-<div class="card">
-📚 Study Planner
-</div>
-
-<div class="card">
-📝 Notes Manager
-</div>
-
-<div class="card">
-📅 Class Schedule
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="section">
-
-<h2>📞 Contact</h2>
-
-<div class="card">
-
-📍 Navrongo, Ghana  
-
-<br><br>
-
-📞 0503173342  
-
-<br><br>
-
-<a href="tel:0503173342" class="btn">
-Call Now
 </a>
 
 </div>
+
+</section>
+
+<section>
+
+<h2>Contact Me</h2>
+
+<a class="button"
+href="https://wa.me/233503173342">
+
+📱 Contact on WhatsApp
+
+</a>
 
 </section>
 
 <footer>
 
-<p>
-© 2026 ALPHA Portfolio  
-Web & App Developer
-</p>
+© 2026 Alpha Portfolio | Ghana 🇬🇭
 
 </footer>
 
 </body>
 
-</html>
+</html
