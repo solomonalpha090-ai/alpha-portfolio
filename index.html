@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,170 +10,300 @@
 
 <style>
 
+/* Body */
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: black;
-    color: white;
+margin:0;
+font-family:Arial, sans-serif;
+background:black;
+color:white;
+scroll-behavior:smooth;
 }
 
-/* ALPHA Logo */
+/* Navigation */
+
+nav {
+background:#000;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+}
+
+nav a {
+color:cyan;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* Logo */
 
 .logo {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 30px;
+font-size:40px;
+font-weight:bold;
+text-align:center;
+margin-top:20px;
 
-    color: cyan;
-    text-shadow:
-        0 0 10px cyan,
-        0 0 20px cyan,
-        0 0 40px cyan;
+color:cyan;
+
+text-shadow:
+0 0 10px cyan,
+0 0 20px cyan,
+0 0 40px cyan;
 }
 
-/* Hero Section */
+/* Hero */
 
 .hero {
-    text-align: center;
-    padding: 40px;
+text-align:center;
+padding:40px;
 }
 
 .hero h1 {
-    font-size: 28px;
-    color: white;
+font-size:28px;
 }
 
 .hero p {
-    font-size: 16px;
-    color: lightgray;
+color:lightgray;
 }
 
 /* Buttons */
 
 .btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
+display:inline-block;
+margin:10px;
+padding:12px 20px;
 
-    background: cyan;
-    color: black;
+background:cyan;
+color:black;
 
-    text-decoration: none;
-    border-radius: 8px;
+text-decoration:none;
+border-radius:8px;
 
-    font-weight: bold;
+font-weight:bold;
+border:none;
 }
 
-.btn:hover {
-    background: white;
-}
-
-/* Section Style */
+/* Sections */
 
 .section {
-    padding: 30px;
-    text-align: center;
+padding:30px;
+text-align:center;
 }
 
 /* Project Boxes */
 
 .project-box {
-    background: #111;
-    margin: 15px;
-    padding: 20px;
 
-    border-radius: 10px;
+background:#111;
+margin:15px;
+padding:20px;
 
-    box-shadow: 0 0 10px cyan;
+border-radius:12px;
+
+box-shadow:0 0 12px cyan;
+
+}
+
+/* Demo Sections */
+
+.demo-section {
+
+display:none;
+padding:30px;
+
 }
 
 /* Footer */
 
 .footer {
-    text-align: center;
-    padding: 20px;
-    background: #000;
-    color: gray;
+
+text-align:center;
+padding:20px;
+color:gray;
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<!-- ALPHA Logo -->
+<!-- Navigation -->
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#about">About</a>
+
+<a href="tel:0503173342">Call</a>
+
+</nav>
+
+<!-- Logo -->
 
 <div class="logo">
+
 ALPHA
+
 </div>
 
-<!-- Hero Section -->
+<!-- Hero -->
 
 <div class="hero">
 
-<h1>Hello, I'm ALPHA 💻</h1>
+<h1>
+
+Hello, I'm ALPHA 💻
+
+</h1>
 
 <p>
+
 Young Developer from Navrongo  
 Building Websites, Apps and Digital Solutions.
+
 </p>
 
 <a href="#projects" class="btn">
+
 View Projects
+
 </a>
 
 <a href="tel:0503173342" class="btn">
+
 Call Me
+
 </a>
 
 </div>
 
-<!-- Projects Section -->
+<!-- Projects -->
 
 <div id="projects" class="section">
 
 <h2>My Projects</h2>
+
+<!-- School -->
 
 <div class="project-box">
 
 <h3>School Website</h3>
 
 <p>
+
 A modern school website design for students and teachers.
+
 </p>
 
-<a href="#" class="btn">
+<button class="btn" onclick="showSchool()">
+
 View Demo
-</a>
+
+</button>
 
 </div>
+
+<!-- Barber -->
 
 <div class="project-box">
 
 <h3>Barber Website</h3>
 
 <p>
+
 A stylish barber booking and showcase website.
+
 </p>
 
-<a href="#" class="btn">
+<button class="btn" onclick="showBarber()">
+
 View Demo
-</a>
+
+</button>
 
 </div>
 
 </div>
 
-<!-- About Section -->
+<!-- School Demo -->
 
-<div class="section">
+<div id="schoolDemo" class="demo-section">
+
+<h2>ALPHA SCHOOL</h2>
+
+<p>Navrongo Digital School</p>
+
+<div class="project-box">
+
+<h3>Subjects</h3>
+
+<p>
+
+Mathematics  
+<br>Science  
+<br>English  
+<br>ICT
+
+</p>
+
+</div>
+
+<button class="btn" onclick="hideAll()">
+
+Back
+
+</button>
+
+</div>
+
+<!-- Barber Demo -->
+
+<div id="barberDemo" class="demo-section">
+
+<h2>ALPHA BARBER</h2>
+
+<p>Fresh Cuts • Clean Style</p>
+
+<div class="project-box">
+
+<h3>Services</h3>
+
+<p>
+
+Haircut  
+<br>Beard Trim  
+<br>Modern Styles
+
+</p>
+
+</div>
+
+<button class="btn" onclick="hideAll()">
+
+Back
+
+</button>
+
+</div>
+
+<!-- About -->
+
+<div id="about" class="section">
 
 <h2>About ALPHA</h2>
 
 <p>
-I am a young developer learning coding and building real projects.
+
+I am a young developer learning coding and building real projects.  
 My goal is to become a powerful software developer and create solutions that help people.
+
 </p>
 
 </div>
@@ -184,5 +316,42 @@ My goal is to become a powerful software developer and create solutions that hel
 
 </div>
 
+<!-- JavaScript -->
+
+<script>
+
+function showSchool() {
+
+document.getElementById("schoolDemo").style.display="block";
+
+document.getElementById("barberDemo").style.display="none";
+
+window.scrollTo(0,document.body.scrollHeight);
+
+}
+
+function showBarber() {
+
+document.getElementById("barberDemo").style.display="block";
+
+document.getElementById("schoolDemo").style.display="none";
+
+window.scrollTo(0,document.body.scrollHeight);
+
+}
+
+function hideAll() {
+
+document.getElementById("schoolDemo").style.display="none";
+
+document.getElementById("barberDemo").style.display="none";
+
+window.scrollTo(0,0);
+
+}
+
+</script>
+
 </body>
+
 </html>
