@@ -10,13 +10,36 @@ content="width=device-width, initial-scale=1">
 
 <style>
 
+/* BODY */
+
 body{
 margin:0;
 font-family:Arial;
 background:linear-gradient(#000,#111);
 color:white;
 text-align:center;
+scroll-behavior:smooth;
 }
+
+/* NAVBAR */
+
+nav{
+background:black;
+padding:15px;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 0 10px gold;
+}
+
+nav a{
+color:gold;
+margin:0 10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HEADER */
 
 header{
 background:black;
@@ -42,6 +65,8 @@ margin-top:10px;
 animation:fadeIn 3s ease;
 }
 
+/* PROFILE */
+
 .profile{
 width:170px;
 height:170px;
@@ -53,9 +78,10 @@ box-shadow:0 0 20px gold;
 animation:zoomIn 2s ease;
 }
 
+/* SECTIONS */
+
 section{
 padding:25px;
-animation:fadeIn 2s ease;
 }
 
 .skill{
@@ -74,6 +100,8 @@ border-radius:15px;
 box-shadow:0 0 12px rgba(255,215,0,0.4);
 }
 
+/* BUTTON */
+
 .button{
 display:inline-block;
 margin-top:14px;
@@ -91,12 +119,41 @@ background:white;
 transform:scale(1.05);
 }
 
+/* TESTIMONIALS */
+
+.testimonial{
+background:#222;
+margin:15px;
+padding:18px;
+border-radius:12px;
+font-style:italic;
+}
+
+/* FOOTER */
+
 footer{
 background:black;
 padding:22px;
 margin-top:30px;
 font-size:14px;
 }
+
+/* FLOATING WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:gold;
+color:black;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
+box-shadow:0 0 10px gold;
+}
+
+/* ANIMATIONS */
 
 @keyframes fadeIn{
 from{
@@ -126,6 +183,20 @@ opacity:1;
 
 <body>
 
+<!-- NAVBAR -->
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<!-- HEADER -->
+
 <header>
 
 <h1>👑 ALPHA</h1>
@@ -143,6 +214,8 @@ class="profile">
 
 </header>
 
+<!-- ABOUT -->
+
 <section>
 
 <h2>About Me</h2>
@@ -155,6 +228,8 @@ for barbers, businesses, restaurants and students.
 </p>
 
 </section>
+
+<!-- SKILLS -->
 
 <section>
 
@@ -170,17 +245,15 @@ for barbers, businesses, restaurants and students.
 
 </section>
 
-<section>
+<!-- PROJECTS -->
+
+<section id="projects">
 
 <h2>My Projects</h2>
 
 <div class="project">
 
 <h3>💈 Barbershop Website</h3>
-
-<p>
-A professional barbershop website design.
-</p>
 
 <a class="button"
 href="barber.html">
@@ -195,10 +268,6 @@ Open Barbershop
 
 <h3>🎓 Student App</h3>
 
-<p>
-A simple student learning web app.
-</p>
-
 <a class="button"
 href="student-app.html">
 
@@ -211,10 +280,6 @@ Open Student App
 <div class="project">
 
 <h3>🌐 Business Website</h3>
-
-<p>
-A modern website for businesses and shops.
-</p>
 
 <a class="button"
 href="#">
@@ -229,10 +294,6 @@ View Business
 
 <h3>🍽️ Restaurant Website</h3>
 
-<p>
-A restaurant website with menu and contact system.
-</p>
-
 <a class="button"
 href="restaurant.html">
 
@@ -244,21 +305,25 @@ Open Restaurant
 
 </section>
 
+<!-- TESTIMONIALS -->
+
 <section>
 
-<h2>Services</h2>
+<h2>Testimonials</h2>
 
-<div class="skill">💼 Business Websites</div>
+<div class="testimonial">
+"Very good website builder — fast and professional."
+</div>
 
-<div class="skill">💈 Barbershop Websites</div>
-
-<div class="skill">🎓 Student Web Apps</div>
-
-<div class="skill">🍽️ Restaurant Websites</div>
+<div class="testimonial">
+"My business now looks modern online."
+</div>
 
 </section>
 
-<section>
+<!-- CONTACT -->
+
+<section id="contact">
 
 <h2>Hire Me</h2>
 
@@ -282,6 +347,15 @@ href="https://wa.me/233503173342">
 Built by ALPHA
 
 </footer>
+
+<!-- FLOATING WHATSAPP -->
+
+<a class="whatsapp"
+href="https://wa.me/233503173342">
+
+📱
+
+</a>
 
 </body>
 
