@@ -2,65 +2,103 @@
 <html>
 <head>
 
-<title>Alpha Portfolio</title>
+<title>ALPHA Portfolio</title>
 
 <meta name="viewport"
 content="width=device-width, initial-scale=1">
 
 <style>
 
+/* BODY */
+
 body{
 margin:0;
 font-family:Arial;
-background:#111;
+background:linear-gradient(#000,#111);
 color:white;
 text-align:center;
 }
 
+/* HEADER */
+
 header{
 background:black;
-padding:25px;
+padding:35px;
+box-shadow:0 0 10px gold;
 }
 
 .profile{
-width:150px;
-height:150px;
+width:170px;
+height:170px;
 border-radius:50%;
+border:5px solid gold;
 margin-top:15px;
-border:3px solid gold;
 object-fit:cover;
+box-shadow:0 0 20px gold;
 }
 
 h1{
 color:gold;
+font-size:30px;
+margin:10px 0;
 }
+
+.subtitle{
+font-size:18px;
+color:#ccc;
+}
+
+/* SECTIONS */
 
 section{
 padding:25px;
 }
 
-.project{
-background:#222;
-margin:15px;
-padding:20px;
-border-radius:12px;
-}
+/* SKILLS */
 
-.button{
-display:inline-block;
-margin-top:12px;
-padding:12px 20px;
-background:gold;
-color:black;
-text-decoration:none;
-border-radius:8px;
+.skill{
+background:#222;
+margin:10px;
+padding:14px;
+border-radius:12px;
 font-weight:bold;
 }
 
+/* PROJECTS */
+
+.project{
+background:#1a1a1a;
+margin:18px;
+padding:22px;
+border-radius:15px;
+box-shadow:0 0 12px rgba(255,215,0,0.4);
+}
+
+/* BUTTON */
+
+.button{
+display:inline-block;
+margin-top:14px;
+padding:13px 24px;
+background:gold;
+color:black;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.button:hover{
+background:white;
+}
+
+/* FOOTER */
+
 footer{
 background:black;
-padding:20px;
+padding:22px;
 margin-top:30px;
+font-size:14px;
 }
 
 </style>
@@ -71,13 +109,13 @@ margin-top:30px;
 
 <header>
 
-<h1>ALPHA</h1>
+<h1>👑 ALPHA</h1>
 
-<p>
-Web Developer | App Builder
+<p class="subtitle">
+Web Developer | App Builder | Portfolio Creator
 </p>
 
-<img src="./alpha.png"
+<img src="alpha.png"
 class="profile">
 
 </header>
@@ -87,11 +125,25 @@ class="profile">
 <h2>About Me</h2>
 
 <p>
-My name is Alpha from Ghana.
+My name is ALPHA from NAVRONGO, Ghana 🇬🇭  
 
-I build websites and simple apps
-for businesses and students.
+I build professional websites and simple apps  
+for barbers, businesses, and students.
 </p>
+
+</section>
+
+<section>
+
+<h2>My Skills</h2>
+
+<div class="skill">🌐 Website Design (HTML)</div>
+
+<div class="skill">🎨 Styling (CSS)</div>
+
+<div class="skill">📱 Mobile-Friendly Websites</div>
+
+<div class="skill">⚙️ Simple Web Apps</div>
 
 </section>
 
@@ -104,13 +156,13 @@ for businesses and students.
 <h3>💈 Barbershop Website</h3>
 
 <p>
-A professional barbershop website.
+A professional barbershop website design.
 </p>
 
 <a class="button"
-href="./barber.html">
+href="barber.html">
 
-Open Project
+Open Barbershop
 
 </a>
 
@@ -121,13 +173,30 @@ Open Project
 <h3>🎓 Student App</h3>
 
 <p>
-A simple student app.
+A simple student learning web app.
 </p>
 
 <a class="button"
-href="./student-app.html">
+href="student-app.html">
 
-Open Project
+Open Student App
+
+</a>
+
+</div>
+
+<div class="project">
+
+<h3>🌐 Business Website</h3>
+
+<p>
+A modern website for businesses and shops.
+</p>
+
+<a class="button"
+href="#">
+
+View Demo
 
 </a>
 
@@ -137,12 +206,31 @@ Open Project
 
 <section>
 
-<h2>Contact Me</h2>
+<h2>Services</h2>
+
+<div class="skill">💼 Business Websites</div>
+
+<div class="skill">💈 Barbershop Websites</div>
+
+<div class="skill">🎓 Student Web Apps</div>
+
+<div class="skill">📱 Mobile-Friendly Design</div>
+
+</section>
+
+<section>
+
+<h2>Hire Me</h2>
+
+<p>
+Need a website for your business?  
+Contact me now.
+</p>
 
 <a class="button"
 href="https://wa.me/233503173342">
 
-📱 Contact on WhatsApp
+📱 Chat on WhatsApp
 
 </a>
 
@@ -150,10 +238,11 @@ href="https://wa.me/233503173342">
 
 <footer>
 
-© 2026 Alpha Portfolio | Ghana 🇬🇭
+© 2026 ALPHA Portfolio | NAVRONGO 🇬🇭  
+Built by ALPHA
 
 </footer>
 
 </body>
 
-</html
+</html>
